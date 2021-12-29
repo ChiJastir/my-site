@@ -48,6 +48,7 @@ body {
 
 .hero-image {
   margin-bottom: 620px;
+  text-transform: uppercase;
 }
 
 .hero-image .container {
