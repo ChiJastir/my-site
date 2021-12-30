@@ -4,11 +4,12 @@ body {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
-  color: #222222;
-  background-color: #f2f4f6;
-  background-image: url("img/hero-bg.jpg");
+  color: #F4F4F4;
+  background-color: #13142C;
+  background-image: url("img/hero-image.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 90% -11%;
+  background-size: 45% 45%;
 }
 
 .container {
@@ -24,13 +25,13 @@ body {
 
 .page-header .container,
 .page-footer .container {
-  max-width: 1408px;
-  text-align: right;
+  max-width: 1250px;
+  text-align: left;
 }
 
 .page-header a {
   margin-left: 56px;
-  color: #288be6;
+  color: #F4F4F4;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
@@ -38,16 +39,20 @@ body {
 
 .header-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
+  background-image: url("img/icon-email-header.png");
+  background-size: 20px 16px;
 }
 
 .header-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
+  background-image: url("img/icon-phone-header.png");
+  background-size: 20px 20px;
 }
 
 .hero-image {
-  margin-bottom: 620px;
+  margin-top: 300px;
+  margin-bottom: 500px;
+  margin-left: -100px;
   text-transform: uppercase;
 }
 
@@ -58,8 +63,8 @@ body {
 
 .heading {
   margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 88px;
+  font-family: "Arial", sans-serif;
+  font-size: 80px;
   line-height: 96px;
   font-weight: 400;
 }
@@ -68,6 +73,8 @@ body {
   margin: 0;
   font-size: 32px;
   line-height: 48px;
+  color: #B8A66F;
+  text-transform: none;
 }
 
 .intro {
@@ -76,7 +83,7 @@ body {
 
 .subheading {
   margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-family: "Arial", sans-serif;
   font-size: 64px;
   line-height: 80px;
   font-weight: 400;
@@ -119,12 +126,17 @@ body {
   background-image: url("img/icon-css.svg");
 }
 
+.skill-js {
+  background-image: url("img/icon-js.png");
+  background-size: 23px 25px;
+}
+
 .level {
   margin: 4px 0 16px;
   padding: 0;
   height: 14px;
   font-size: 0;
-  background-color: #ffffff;
+  background-color: #D2D2D2;
   border: 1px solid #86c3fa;
   border-radius: 8px;
 }
@@ -132,7 +144,7 @@ body {
 .level div {
   margin: 1px;
   height: 12px;
-  background-color: #288be6;
+  background-color: #A00000;
   border-radius: 6px;
 }
 
@@ -155,6 +167,11 @@ body {
   text-align: center;
 }
 
+section p a {
+  text-decoration: none;
+  color: #AF69D5;
+}
+
 .projects p {
   margin: 0 0 24px;
 }
@@ -166,13 +183,13 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: #288be6;
+  background-color: #AF69D5;
   color: #ffffff;
 }
 
 .page-footer {
   padding: 40px 0;
-  background-color: #00417d;
+  background-color: #383961;
   color: #ffffff;
 }
 
@@ -192,4 +209,24 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
+}
+
+.anime {
+  opacity: 0;
+  transform: translateY(40px);
+  transition-property: opacity, transform;
+  transition-duration: 700ms;
+}
+
+.anime.naruto {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.saske {
+  transition: width 1s;
+}
+
+#photo {
+  margin-left: -4%;
 }

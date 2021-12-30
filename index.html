@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <title>Портфолио Junior верстальщика</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/ico.png">
+    <title>Портфолио Чиж Александра</title>
   </head>
 
   <body>
@@ -16,26 +17,34 @@
     </header>
     <div class="container">
     <section class="hero-image">
-      <h1 class="heading">Чиж Александр</h1>
       <p>Junior верстальщик</p>
+      <h1 class="heading">Александр Чиж</h1>
     </section>
 
     <section class="intro">
-      <h2 class="subheading">Давайте познакомимся</h2>
+      <h2 class="subheading anime">Давайте познакомимся</h2>
       <figure>
-          <img src="files/user.jpg" width="928" height="536" alt="Типо моя фотка">
+          <img id="photo" class="anime" src="files/user.jpg" width="928" height="536" alt="Типо моя фотка">
       </figure>
-      <h3>Пара слов о себе</h3>
-      <p>Чиж Александр, 15 лет. Мечтаю стать программистом и создавать игры</p>
-      <h3>Чем могу быть полезен</h3>
-      <p>Пока-что ничем( Надеюсь что вскоре я изменю описание</p>
-      <div class="skills">
+        <div class="anime">
+          <h3>Пара слов о себе</h3>
+          <p>Чиж Александр, 15 лет. Мечтаю стать программистом и создавать игры</p>
+        </div>
+        <div class="anime">
+          <h3>Чем могу быть полезен</h3>
+          <p>Пока-что ничем( Надеюсь что вскоре я изменю описание</p>
+        </div>
+      <div class="skills anime">
         <h3>Мои навыки</h3>
        <dl class="skills-list">
           <dt class="skill-html">HTML</dt>
-          <dd class="level"><div style="width: 60%;">60%</div></dd>
+          <dd class="level"><div class="saske" data-percent ="60%">60%</div></dd>
+
           <dt class="skill-css">CSS</dt>
-          <dd class="level"><div style="width: 40%;">40%</div></dd>
+          <dd class="level"><div class="saske" data-percent ="40%">40%</div></dd>
+
+          <dt class="skill-js">JS</dt>
+          <dd class="level"><div class="saske" data-percent ="20%">20%</div></dd>
        </dl>
       </div>
     </section>
@@ -44,14 +53,12 @@
       <h2 class="subheading">Мои работы</h2>
 
       <figure class = "project-image">
-        <img src="files/project.jpg" width="928" height="536" alt="Cайт магазина товаров для дома">
+        <img src="files/project.jpg" width="959" height="466" alt="Cайт магазина товаров для дома">
       </figure>
-      <h3>Магазин товаров для дома</h3>
-      <p>Мой первый сайт.</p>
+      <h3>Пробовал повторить какой-то сайт из интернета</h3>
+      <p>Я пытался повторить <a href="https://framenoir.com/blackframe/#intro">этот</a> сайт)</p>
       <a class="button" href="source/project/index.html">Открыть страницу</a>
 
-      <h3>Блог начинающего верстальщика</h3>
-      <p>Статический блог про обучение HTML и CSS.</p>
     </section>
     </div>
     <footer class="page-footer">
@@ -60,5 +67,7 @@
         <a class="footer-email" href = "mailto:sanya.chizh.00@bk.ru">sanya.chizh.00@bk.ru</a>
       </div>
     </footer>
+
+    <script type="text/javascript" src="app.js"></script> 
   </body>
 </html>
